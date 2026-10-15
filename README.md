@@ -4,8 +4,8 @@ A minimal one-page portfolio (About + Contact), plain HTML/CSS/JS, no build step
 
 ## Files
 - `index.html` — page content
-- `styles.css` — all styling
-- `script.js` — replays the waveform animation on scroll
+- `portfolio.css` — all styling
+- `portfolio.js` — replays the waveform animation on scroll
 
 ## Before you push
 Open `index.html` and swap the placeholder contact info for your real ones:

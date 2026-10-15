@@ -9,10 +9,20 @@
 <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
- 
-  <main>
+
+  <header class="site-nav">
+    <a href="#top" class="nav-brand">mov<span>.</span></a>
+    <nav aria-label="Primary">
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+<main>
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="top">
       <p class="eyebrow">Portfolio — signal 01</p>
       <h1>Midhun O V</h1>
       <p class="tagline">First-year CS student in Kerala, building things that read signals — code, neural data, and gameplay.</p>
@@ -35,15 +45,104 @@
         question generator using the Claude API. When I'm not coding, I'm probably watching movies or grinding
         in a game.
       </p>
-      <ul class="stack">
-        <li>C</li>
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Git</li>
+      <ul class="facts">
+        <li><span>studying</span> B.Tech Computer Science, JCET</li>
+        <li><span>based in</span> Kerala, India</li>
+        <li><span>learning</span> C, AI fundamentals, linear algebra</li>
       </ul>
     </section>
- 
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <p class="label">// projects</p>
+      <div class="project-list">
+
+        <article class="project">
+          <div class="project-head">
+            <h3>AquaAlert</h3>
+            <span class="project-tag">full-stack</span>
+          </div>
+          <p>
+            A community water-watch platform where citizens report contamination, shortages and
+            infrastructure damage, and administrators review and update each report. Includes a live issue map,
+            an admin dashboard with charts, role-based login and photo evidence uploads.
+          </p>
+          <ul class="chips">
+            <li>React</li><li>Vite</li><li>Node.js</li><li>Express</li><li>SQLite</li><li>Leaflet</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/midhunov905-lab/Aqua-Alert" target="_blank" rel="noopener">source code &rarr;</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <h3>QuizForge</h3>
+            <span class="project-tag">AI tool</span>
+          </div>
+          <p>
+            An AI-powered question generator built on the Claude API. Give it a topic and it produces
+            practice questions you can use for revision.
+          </p>
+          <ul class="chips">
+            <li>Claude API</li><li>JavaScript</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <h3>NeurArc Technologies</h3>
+            <span class="project-tag">concept</span>
+          </div>
+          <p>
+            A brain-computer-interface concept for gaming, exploring how neural signals could become a
+            new kind of game controller. Currently at the prototyping stage.
+          </p>
+          <ul class="chips">
+            <li>BCI</li><li>Signal processing</li><li>Game input</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <h3>Sound Over Light</h3>
+            <span class="project-tag">electronics &middot; 2025</span>
+          </div>
+          <p>
+            A project that sends sound from one place to another using light. The audio is turned into a
+            light signal at the transmitting end and turned back into sound at the receiving end.
+          </p>
+          <ul class="chips">
+            <li>Electronics</li><li>Audio</li><li>Light communication</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <p class="label">// skills</p>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h4>languages</h4>
+          <ul class="stack"><li>C</li><li>Python</li><li>JavaScript</li></ul>
+        </div>
+        <div class="skill-group">
+          <h4>web</h4>
+          <ul class="stack"><li>HTML</li><li>CSS</li><li>React</li><li>Node.js</li><li>Express</li></ul>
+        </div>
+        <div class="skill-group">
+          <h4>tools</h4>
+          <ul class="stack"><li>Git</li><li>GitHub</li><li>VS Code</li><li>SQLite</li></ul>
+        </div>
+        <div class="skill-group">
+          <h4>learning</h4>
+          <ul class="stack"><li>AI fundamentals</li><li>Linear algebra</li></ul>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section class="contact" id="contact">
       <p class="label">// contact</p>
